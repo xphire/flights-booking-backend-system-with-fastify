@@ -148,4 +148,16 @@ export const loginInput : JSONSchemaType<loginInput> = {
 }
 
 
+export const deleteUserResponseSchema : JSONSchemaType<{message : string}> = {
+
+  type : 'object',
+  properties : {
+
+    message: {type : 'string'}
+  },
+  additionalProperties : false,
+  required : ['message']
+}
+
+
 

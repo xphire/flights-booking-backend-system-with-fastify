@@ -6,6 +6,8 @@ import { createUserRouteOptions, fetchUsersRouteOptions , fetchUserByIDRouteOpti
 
 import { userLoginController , adminAuth } from "./modules/auth/auth"
 
+import prisma from "../utils/prisma"
+
 server.register(helmet, {
 
   contentSecurityPolicy : false
@@ -24,11 +26,24 @@ server.post('/api/v1/auth' , userLoginController );
 server.register(function(app, _, done) {
 
 
+  //get all users
   app.route( fetchUsersRouteOptions)
 
+
+//post user
   app.route(createUserRouteOptions)
 
+//fetch user by ID
   app.route(fetchUserByIDRouteOptions)
+
+//patch user
+  app.route(partialUpdateUserRouteOptions)
+
+//put user
+  app.route(fullUpdateUserRouteOptions)
+
+//delete user
+  app.route(deleteUserRouteOptions)
   
 
   done()
@@ -57,8 +72,12 @@ server.setErrorHandler((error, request, reply) => {
 })
 
   
+
+//check if database can be reached/connected before starting server
 const start = async () => {
     try {
+
+      await prisma.$connect()
         
       await server.listen({ port: 3000 })
 

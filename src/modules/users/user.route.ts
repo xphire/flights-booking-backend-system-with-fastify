@@ -1,6 +1,6 @@
 import { createUserController , fetchUserByIDController, fetchUsersController , fullUpdateUserController , partialUpdateUserController , deleteUserController } from "./user.controller";
 
-import { createUserSchema , createUserResponseSchema , fetchUsersResponseSchema , fetchUsersQuery , fetchUserByIDQuery } from "./user.schema";
+import { createUserSchema , createUserResponseSchema , fetchUsersResponseSchema , fetchUsersQuery , fetchUserByIDQuery , deleteUserResponseSchema } from "./user.schema";
 
 import { adminAuth } from "../auth/auth";
 
@@ -49,7 +49,7 @@ export const fetchUserByIDRouteOptions = {
     url : '/user/:id',
     schema : {
 
-        queryparam : fetchUserByIDQuery,
+        params : fetchUserByIDQuery,
 
         response : {
 
@@ -69,7 +69,7 @@ export const fullUpdateUserRouteOptions = {
     schema : {
 
 
-        queryparam : fetchUserByIDQuery,
+        params : fetchUserByIDQuery,
 
         response : {
 
@@ -90,7 +90,7 @@ export const partialUpdateUserRouteOptions = {
     schema : {
 
 
-        queryparam : fetchUserByIDQuery,
+        params : fetchUserByIDQuery,
 
         response : {
 
@@ -110,7 +110,13 @@ export const deleteUserRouteOptions = {
     schema : {
 
 
-        queryparam : fetchUserByIDQuery,
+        params : fetchUserByIDQuery,
+
+        response : {
+
+            204 : deleteUserResponseSchema
+        }
+
 
 
     },

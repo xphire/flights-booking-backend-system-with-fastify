@@ -15,12 +15,12 @@ export async function createUserController(request : FastifyRequest<{Body : crea
 
         console.log(user)
 
-        reply.code(201).send(user)
+        return reply.code(201).send(user)
         
     } catch (error) {
 
       console.log(error);
-      reply.send(error);
+      return reply.send(error);
 
     }
 
@@ -36,12 +36,12 @@ export async function fetchUsersController(request : FastifyRequest<{Querystring
 
         const users = await fetchUsersService(perPage, page)
 
-        reply.code(200).send(users)
+        return reply.code(200).send(users)
         
     } catch (error) {
 
       console.log(error);
-      reply.send(error);
+      return reply.send(error);
 
     }
 
@@ -59,14 +59,14 @@ export async function fetchUserByIDController (request : FastifyRequest<{Params 
       const user = await fetchUserByIDService(id)
 
 
-      reply.status(200).send(user)
+      return reply.status(200).send(user)
 
 
     
   } catch (error) {
 
     console.log(error);
-    reply.send(error);
+    return reply.send(error);
     
   }
 
@@ -85,14 +85,14 @@ export async function fullUpdateUserController (request : FastifyRequest<{Body :
       const user = await fullUpdateUserService(id , request.body)
 
 
-      reply.status(200).send(user)
+      return reply.status(200).send(user)
 
 
     
   } catch (error) {
 
     console.log(error);
-    reply.send(error);
+    return reply.send(error);
     
   }
 
@@ -111,14 +111,14 @@ export async function partialUpdateUserController (request : FastifyRequest<{Bod
       const user = await partialUpdateUserService(id , request.body)
 
 
-      reply.status(200).send(user)
+      return reply.status(200).send(user)
 
 
     
   } catch (error) {
 
     console.log(error);
-    reply.send(error);
+    return reply.send(error);
     
   }
 
@@ -132,21 +132,15 @@ export async function deleteUserController (request : FastifyRequest<{ Params : 
 
       const {id} = request.params
 
-
       await deleteUserService(id)
 
-
-      reply.status(204).send({message : `User with ID ${id} successfully deleted`})
-
-
-      return
-
+      return reply.status(204).send({message : `User with ID ${id} successfully deleted`})
 
     
   } catch (error) {
 
     console.log(error);
-    reply.send(error);
+    return reply.send(error);
     
   }
 

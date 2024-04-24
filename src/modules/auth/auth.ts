@@ -51,12 +51,12 @@ export async function userLoginController (request : FastifyRequest<{Body : logi
 
         const {password , ...rest} = user
 
-        const validity = argon2.verify(password,request.body.password)
+        await argon2.verify(password,request.body.password)
 
-        if(!validity){
+        // if(!validity){
 
-            throw Error('invalid username or password')
-        }
+        //     throw Error('invalid username or password')
+        // }
 
         const token = await issueJWT({sub : rest.id})
 
