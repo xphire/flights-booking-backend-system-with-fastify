@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Flight" ADD COLUMN     "filled" INTEGER NOT NULL DEFAULT 0,
+ALTER COLUMN "seats" DROP DEFAULT;

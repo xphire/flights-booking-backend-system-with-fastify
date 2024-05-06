@@ -18,7 +18,8 @@
   },
   "scripts": {
     "develop": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "studio" : "npx prisma studio"
+    "studio" : "npx prisma studio",
+    "migrate" : "npx prisma migrate dev --name"
 
   },
   "devDependencies": {

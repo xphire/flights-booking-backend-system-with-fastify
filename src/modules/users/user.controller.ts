@@ -13,8 +13,6 @@ export async function createUserController(request : FastifyRequest<{Body : crea
 
         const user = await createUserService(body);
 
-        console.log(user)
-
         return reply.code(201).send(user)
         
     } catch (error) {

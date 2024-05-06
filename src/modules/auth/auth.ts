@@ -1,6 +1,6 @@
 import { loginFetch , fetchUserByIDService } from "../users/user.service";
 
-import { loginInput , createUserResponse } from "../users/user.schema";
+import { loginInput  } from "../users/user.schema";
 
 import { readFile } from "fs/promises";
 
@@ -13,6 +13,15 @@ import jwt from "jsonwebtoken";
 type jwtBody = {
 
     sub : number
+}
+
+declare module 'fastify'{
+
+    interface FastifyRequest{
+
+        authorId : string,
+        userId : string
+    }
 }
 
 
@@ -74,7 +83,7 @@ export async function userLoginController (request : FastifyRequest<{Body : logi
 }
 
 
-export async function adminAuth (request : FastifyRequest, reply : FastifyReply ){
+export async function adminAuth (request : FastifyRequest , reply : FastifyReply ){
 
 
        try {
@@ -108,6 +117,10 @@ export async function adminAuth (request : FastifyRequest, reply : FastifyReply 
                 throw Error("unauthorized")
             }
 
+
+            request.userId = id
+
+
         
        } catch (error : Error | any | unknown) {
       
@@ -115,6 +128,57 @@ export async function adminAuth (request : FastifyRequest, reply : FastifyReply 
            reply.code(401).send({"error" : error.message})
 
        }
+
+}
+
+
+export async function adminAuthAddIdToBody (request : FastifyRequest<{Body : object}>, reply : FastifyReply ){
+
+
+    //this is different from the above adminAuth as we need to add an ID to the request body
+
+
+    try {
+
+
+          const bearer  = request.headers.authorization 
+
+
+          if(!bearer){
+
+             throw Error ('missing bearer token')
+         }
+
+          const [bearerWord , token] = bearer.split(" ")
+
+
+         if(!bearerWord || !token){
+
+             throw Error ('missing bearer token')
+         }
+
+
+         const decoded = await verifyJWT(token)
+
+         const id = String(decoded.sub)
+
+         const user = await fetchUserByIDService(id)
+
+         if (!user || user.role !== 'ADMIN'){
+
+             throw Error("unauthorized")
+         }
+
+         request.authorId = id
+
+
+     
+    } catch (error : Error | any | unknown) {
+   
+        console.log(error)
+        reply.code(401).send({"error" : error.message})
+
+    }
 
 }
 

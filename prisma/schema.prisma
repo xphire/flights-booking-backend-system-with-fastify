@@ -35,7 +35,8 @@ model Flight  {
   description     String   @db.VarChar(255)
   author          User    @relation(fields: [authorId], references: [id])
   authorId        Int
-  seats           Int      @default(0)
+  seats           Int      
+  filled          Int      @default(0)
 }
 
 

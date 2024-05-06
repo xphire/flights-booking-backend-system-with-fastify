@@ -2,9 +2,11 @@ import server from "./app"
 
 import helmet from '@fastify/helmet'
 
-import { createUserRouteOptions, fetchUsersRouteOptions , fetchUserByIDRouteOptions , partialUpdateUserRouteOptions, fullUpdateUserRouteOptions, deleteUserRouteOptions  } from "./modules/users/user.route"
+import * as userRoutes from "./modules/users/user.route"
 
-import { userLoginController , adminAuth } from "./modules/auth/auth"
+import * as flightRoutes from "./modules/flights/flight.route"
+
+import { userLoginController  } from "./modules/auth/auth"
 
 import prisma from "../utils/prisma"
 
@@ -27,27 +29,54 @@ server.register(function(app, _, done) {
 
 
   //get all users
-  app.route( fetchUsersRouteOptions)
+  app.route( userRoutes.fetchUsersRouteOptions)
 
 
 //post user
-  app.route(createUserRouteOptions)
+  app.route(userRoutes.createUserRouteOptions)
 
 //fetch user by ID
-  app.route(fetchUserByIDRouteOptions)
+  app.route(userRoutes.fetchUserByIDRouteOptions)
 
 //patch user
-  app.route(partialUpdateUserRouteOptions)
+  app.route(userRoutes.partialUpdateUserRouteOptions)
 
 //put user
-  app.route(fullUpdateUserRouteOptions)
+  app.route(userRoutes.fullUpdateUserRouteOptions)
 
 //delete user
-  app.route(deleteUserRouteOptions)
+  app.route(userRoutes.deleteUserRouteOptions)
   
 
   done()
 }, { prefix: '/api/v1/users'}, )
+
+
+server.register(function(app,_,done){
+
+    //get all users 
+
+    app.route(flightRoutes.fetchFlightsRouteOptions)
+
+    //create flight
+
+    app.route(flightRoutes.createFlightRouteOptions)
+
+    //fetch user by ID
+    app.route(flightRoutes.fetchFlightByIDRouteOptions)
+
+    //patch user
+    app.route(flightRoutes.partialUpdateFlightRouteOptions)
+  
+    //put user
+    app.route(flightRoutes.fullUpdateFlightRouteOptions)
+  
+    //delete user
+    app.route(flightRoutes.deleteFlightRouteOptions) 
+
+    done()
+
+}, {prefix: 'api/v1/flights'})
 
 
 //with auth

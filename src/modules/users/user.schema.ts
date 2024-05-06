@@ -13,7 +13,7 @@ export interface loginInput {
   password : string
 }
 
-export type createUserResponse = {
+export interface createUserResponse  {
 
     id : number,
     email : string,
@@ -23,14 +23,14 @@ export type createUserResponse = {
 
 }
 
-export type fetchUsersQuery = {
+export interface fetchUsersQuery  {
    
    perPage? : string,
    page? : string
    
 }
 
-export type meta = {
+export interface meta  {
 
   per_page : number,
   page : number,
@@ -38,7 +38,7 @@ export type meta = {
   
 }
 
-export type fetchUsersResponse = {
+export interface fetchUsersResponse  {
 
    data : Omit<createUserResponse,'createdAt'>[],
    meta : meta
