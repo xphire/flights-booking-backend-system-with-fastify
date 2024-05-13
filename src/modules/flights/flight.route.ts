@@ -1,7 +1,6 @@
 import { createFlightController, fetchFlightsController , fetchFlightByIDController , fullUpdateFlightController , partialUpdateFlightController, deleteFlightController } from "./flight.controller";
 import { adminAuth } from "../auth/auth";
-import { createFlightResponseSchema, createFlightSchema , fetchFlightsResponseSchema , fetchFlightsQuery , fetchFlightByIDQuery , deleteFlightResponseSchema } from "./flight.schema";
-
+import { createFlightResponseSchema, createFlightSchema , fetchFlightsResponseSchema , fetchFlightsQuery , fetchFlightByIDQuery , deleteFlightResponseSchema, createFlightInput } from "./flight.schema";
 
 
 export const createFlightRouteOptions = {
@@ -10,6 +9,9 @@ export const createFlightRouteOptions = {
     url : '/flight',
     schema : {
 
+
+        description : 'register a flight',
+        tags : ['flights'],
         body : createFlightSchema,
 
         response : {
@@ -30,6 +32,9 @@ export const fetchFlightsRouteOptions = {
     url : '/all',
     schema : {
 
+
+        description : 'get all flights',
+        tags : ['flights'],
         querystring : fetchFlightsQuery,
 
         response : {
@@ -49,7 +54,9 @@ export const fetchFlightByIDRouteOptions = {
     method : 'GET' as const,
     url : '/flight/:id',
     schema : {
-
+        
+        description : 'get flight  by Id',
+        tags : ['flights'],
         params : fetchFlightByIDQuery,
 
         response : {
@@ -70,7 +77,8 @@ export const fullUpdateFlightRouteOptions = {
     url : '/flight/:id',
     schema : {
 
-
+        description : 'fully update flight',
+        tags : ['flights'],
         params : fetchFlightByIDQuery,
 
         response : {
@@ -91,7 +99,8 @@ export const partialUpdateFlightRouteOptions = {
     url : '/flight/:id',
     schema : {
 
-
+        description : 'partially update flight',
+        tags : ['flights'],
         params : fetchFlightByIDQuery,
 
         response : {
@@ -112,7 +121,8 @@ export const deleteFlightRouteOptions = {
     url : '/flight/:id',
     schema : {
 
-
+        description : 'delete a flight',
+        tags : ['flights'],
         params : fetchFlightByIDQuery,
 
         response : {
@@ -127,3 +137,4 @@ export const deleteFlightRouteOptions = {
     handler : deleteFlightController
 
 }
+

@@ -10,6 +10,15 @@ import * as argon2 from "argon2"
 
 import jwt from "jsonwebtoken";
 
+import {JSONSchemaType} from "ajv";
+
+
+export interface loginResponse {
+
+    token : string,
+    message : string
+}
+
 type jwtBody = {
 
     sub : number
@@ -24,6 +33,16 @@ declare module 'fastify'{
     }
 }
 
+export const headerSchemaOptions : JSONSchemaType<{Authorization : string}> = {
+
+    type : 'object',
+    properties : {
+
+        Authorization : {type : 'string', minLength: 1 }
+    },
+    required : ['Authorization'],
+    additionalProperties : true
+}
 
 
 async function issueJWT (input : jwtBody) {
@@ -60,25 +79,61 @@ export async function userLoginController (request : FastifyRequest<{Body : logi
 
         const {password , ...rest} = user
 
-        await argon2.verify(password,request.body.password)
+        const isValid = await argon2.verify(password,request.body.password)
 
-        // if(!validity){
-
-        //     throw Error('invalid username or password')
-        // }
+        if (!isValid) throw new Error('invalid email or password')
 
         const token = await issueJWT({sub : rest.id})
 
-        reply.status(200).send({message : `Authentication Successful`, token : token })
+        reply.status(201).send({message : `Authentication Successful`, token : token })
 
         
     } catch (error) {
 
         console.log(error)
-        reply.send(error)
+        reply.code(400).send(error)
         
     }
 
+
+}
+
+
+export async function userAuth (request : FastifyRequest , reply : FastifyReply ){
+
+
+    try {
+
+
+          const bearer  = request.headers.authorization 
+
+
+          if(!bearer){
+
+             throw Error ('Unauthorized')
+         }
+
+          const [bearerWord , token] = bearer.split(" ")
+
+
+         if(!bearerWord || !token){
+
+             throw Error ('missing bearer token')
+         }
+
+         const decoded = await verifyJWT(token)
+
+         const id = String(decoded.sub)
+
+         request.userId = id
+
+     
+    } catch (error : Error | any | unknown) {
+   
+        console.log(error)
+        reply.code(401).send({"error" : error.message})
+
+    }
 
 }
 
@@ -94,18 +149,17 @@ export async function adminAuth (request : FastifyRequest , reply : FastifyReply
 
              if(!bearer){
 
-                throw Error ('missing bearer token')
+                throw Error ('missing authorization header')
             }
 
              const [bearerWord , token] = bearer.split(" ")
 
 
-            if(!bearerWord || !token){
+            if(!bearerWord || bearerWord !== "Bearer" || !token){
 
                 throw Error ('missing bearer token')
             }
  
-
             const decoded = await verifyJWT(token)
 
             const id = String(decoded.sub)
@@ -125,7 +179,7 @@ export async function adminAuth (request : FastifyRequest , reply : FastifyReply
        } catch (error : Error | any | unknown) {
       
            console.log(error)
-           reply.code(401).send({"error" : error.message})
+           reply.status(401).send({"error" : error.message})
 
        }
 
@@ -181,4 +235,49 @@ export async function adminAuthAddIdToBody (request : FastifyRequest<{Body : obj
     }
 
 }
+
+
+export const loginRequestSchema : JSONSchemaType<loginInput> = {
+
+
+    type : "object",
+    properties :{
+
+        email : {type : "string", format : "email"},
+        password : {type : "string"}
+    },
+    required : ["email", "password"],
+    additionalProperties : false
+}
+
+
+export const loginResponseSchema : JSONSchemaType<loginResponse> = {
+
+    type : "object",
+    properties :{
+        message : {type : "string"},
+        token : {type : "string"}
+    },
+    required : ["token", "message"],
+    additionalProperties : false
+}
+
+export const loginRouteOptions = {
+
+    method : 'POST' as const,
+    url : '/auth',
+    schema : {
+
+        description : 'generate JWT for authentication',
+        tags : ['auth'],
+        body : loginRequestSchema,
+        response : {
+
+            201 : loginResponseSchema
+        }
+    },
+        handler : userLoginController
+
+    }
+
 

@@ -2,7 +2,7 @@ import { createUserController , fetchUserByIDController, fetchUsersController , 
 
 import { createUserSchema , createUserResponseSchema , fetchUsersResponseSchema , fetchUsersQuery , fetchUserByIDQuery , deleteUserResponseSchema } from "./user.schema";
 
-import { adminAuth } from "../auth/auth";
+import { adminAuth, headerSchemaOptions } from "../auth/auth";
 
 export const createUserRouteOptions = {
 
@@ -10,14 +10,14 @@ export const createUserRouteOptions = {
     url : '/user',
     schema : {
 
-        body : createUserSchema,
 
+        description : 'create a user',
+        tags : ['users'],
+        body : createUserSchema,
         response : {
 
             201 : createUserResponseSchema
         }
-
-
     },
     handler : createUserController
 } 
@@ -27,15 +27,23 @@ export const fetchUsersRouteOptions = {
 
     method : 'GET' as const,
     url : '/all',
+    security : [
+        
+        {
+                bearerAuth : []
+        }
+
+    ],
     schema : {
 
-        querystring : fetchUsersQuery,
 
+        description : 'get all users',
+        tags : ['users'],
+        querystring : fetchUsersQuery,
         response : {
 
             200 : fetchUsersResponseSchema
         }
-
 
     },
     preHandler : adminAuth,
@@ -48,7 +56,9 @@ export const fetchUserByIDRouteOptions = {
     method : 'GET' as const,
     url : '/user/:id',
     schema : {
-
+        
+        description : 'get user by Id',
+        tags : ['users'],
         params : fetchUserByIDQuery,
 
         response : {
@@ -68,9 +78,9 @@ export const fullUpdateUserRouteOptions = {
     url : '/user/:id',
     schema : {
 
-
+        description : 'get user by Id',
+        tags : ['users'],
         params : fetchUserByIDQuery,
-
         response : {
 
             200 : createUserResponseSchema
@@ -89,9 +99,9 @@ export const partialUpdateUserRouteOptions = {
     url : '/user/:id',
     schema : {
 
-
+        description : 'partially update user',
+        tags : ['users'],
         params : fetchUserByIDQuery,
-
         response : {
 
             200 : createUserResponseSchema
@@ -109,9 +119,9 @@ export const deleteUserRouteOptions = {
     url : '/user/:id',
     schema : {
 
-
+        description : 'delete a user',
+        tags : ['users'],
         params : fetchUserByIDQuery,
-
         response : {
 
             204 : deleteUserResponseSchema

@@ -37,6 +37,7 @@ model Flight  {
   authorId        Int
   seats           Int      
   filled          Int      @default(0)
+  bookings        Booking[]
 }
 
 
@@ -44,9 +45,11 @@ model Booking  {
   id              Int      @id @default(autoincrement())
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
-  user            User    @relation(fields: [userId], references: [id])
+  user            User     @relation(fields: [userId], references: [id])
   userId          Int
-  seat            Int 
+  seat            Int
+  flight          Flight   @relation(fields: [flightId], references: [id])
+  flightId        Int
 }
 
 enum Role {
