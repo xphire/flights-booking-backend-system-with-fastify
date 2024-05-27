@@ -1,17 +1,33 @@
-import Fastify, { FastifyInstance } from 'fastify'
+import fastify from 'fastify'
 
 
-const server : FastifyInstance = Fastify({
-    logger : {
+export function createServer (opts={}){
 
-        transport : {
+    const server = fastify(opts)
 
-            target : 'pino-pretty'
-        }
-    }
-})
+    server.get('/', async function (request, reply) {
+        return { hello: 'world' }
+      })
+
+    return server
 
 
-export default server;
+}
+
+
+// const server : FastifyInstance = Fastify({
+//     logger : {
+
+//         level : 'info',
+
+//         transport : {
+
+//             target : 'pino-pretty'
+//         }
+//     }
+// })
+
+
+// export default server;
 
 

@@ -1,0 +1,14 @@
+TAP version 14
+# Subtest: tests the "/" route
+    1..2
+    ok 1 - returns a status code of 200
+    ok 2 - should be equivalent
+ok 1 - tests the "/" route # time=41.21ms
+
+# Subtest: tests the "/health" route
+    ok 1 - returns a status code of 200
+    ok 2 - should be equivalent
+    1..2
+ok 2 - tests the "/health" route # time=1.854ms
+
+1..2

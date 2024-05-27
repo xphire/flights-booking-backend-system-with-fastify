@@ -1,0 +1,104 @@
+{
+  "result": [
+    {
+      "scriptId": "639",
+      "url": "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/app.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 2317,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "__importDefault",
+          "ranges": [
+            {
+              "startOffset": 70,
+              "endOffset": 151,
+              "count": 1
+            },
+            {
+              "startOffset": 122,
+              "endOffset": 127,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "createServer",
+          "ranges": [
+            {
+              "startOffset": 302,
+              "endOffset": 503,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 406,
+              "endOffset": 480,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  ],
+  "timestamp": 396192.880937,
+  "source-map-cache": {
+    "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/app.ts": {
+      "lineLengths": [
+        13,
+        72,
+        62,
+        2,
+        62,
+        30,
+        54,
+        34,
+        48,
+        53,
+        34,
+        7,
+        18,
+        1,
+        36,
+        45,
+        17,
+        26,
+        24,
+        37,
+        12,
+        8,
+        5,
+        25,
+        1568
+      ],
+      "data": {
+        "version": 3,
+        "file": "C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/app.ts",
+        "sources": [
+          "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/app.ts"
+        ],
+        "names": [],
+        "mappings": ";;;;;;AAAA,sDAA6B;AAG7B,SAAgB,YAAY,CAAE,IAAI,GAAC,EAAE;IAEjC,MAAM,MAAM,GAAG,IAAA,iBAAO,EAAC,IAAI,CAAC,CAAA;IAE5B,MAAM,CAAC,GAAG,CAAC,GAAG,EAAE,KAAK,WAAW,OAAO,EAAE,KAAK;QAC1C,OAAO,EAAE,KAAK,EAAE,OAAO,EAAE,CAAA;IAC3B,CAAC,CAAC,CAAA;IAEJ,OAAO,MAAM,CAAA;AAGjB,CAAC;AAXD,oCAWC;AAGD,6CAA6C;AAC7C,iBAAiB;AAEjB,0BAA0B;AAE1B,wBAAwB;AAExB,qCAAqC;AACrC,YAAY;AACZ,QAAQ;AACR,KAAK;AAGL,yBAAyB",
+        "sourcesContent": [
+          "import fastify from 'fastify'\r\n\r\n\r\nexport function createServer (opts={}){\r\n\r\n    const server = fastify(opts)\r\n\r\n    server.get('/', async function (request, reply) {\r\n        return { hello: 'world' }\r\n      })\r\n\r\n    return server\r\n\r\n\r\n}\r\n\r\n\r\n// const server : FastifyInstance = Fastify({\r\n//     logger : {\r\n\r\n//         level : 'info',\r\n\r\n//         transport : {\r\n\r\n//             target : 'pino-pretty'\r\n//         }\r\n//     }\r\n// })\r\n\r\n\r\n// export default server;\r\n\r\n\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    }
+  }
+}

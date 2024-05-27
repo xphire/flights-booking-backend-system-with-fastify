@@ -175,7 +175,7 @@ export const updateBookingUserService = async (input : updateBookingInput) => {
 
             where : {
 
-                id : input.bookingId
+                id : input.id
             }
         }
     )
@@ -196,7 +196,7 @@ export const updateBookingUserService = async (input : updateBookingInput) => {
 
           where : {
 
-            id : input.bookingId
+            id : input.id
           },
           select : selection
 

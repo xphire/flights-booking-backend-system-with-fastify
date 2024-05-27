@@ -1,0 +1,665 @@
+{
+  "result": [
+    {
+      "scriptId": "639",
+      "url": "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/app.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 2317,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "__importDefault",
+          "ranges": [
+            {
+              "startOffset": 70,
+              "endOffset": 151,
+              "count": 1
+            },
+            {
+              "startOffset": 122,
+              "endOffset": 127,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "createServer",
+          "ranges": [
+            {
+              "startOffset": 302,
+              "endOffset": 503,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 406,
+              "endOffset": 480,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "931",
+      "url": "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.service.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 11912,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "__importDefault",
+          "ranges": [
+            {
+              "startOffset": 70,
+              "endOffset": 151,
+              "count": 1
+            },
+            {
+              "startOffset": 128,
+              "endOffset": 148,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "createFlightService",
+          "ranges": [
+            {
+              "startOffset": 668,
+              "endOffset": 841,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "fetchFlightsService",
+          "ranges": [
+            {
+              "startOffset": 922,
+              "endOffset": 1557,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "fetchFlightByIDService",
+          "ranges": [
+            {
+              "startOffset": 1641,
+              "endOffset": 1977,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "fullUpdateFlightService",
+          "ranges": [
+            {
+              "startOffset": 2068,
+              "endOffset": 2422,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "partialUpdateFlightService",
+          "ranges": [
+            {
+              "startOffset": 2518,
+              "endOffset": 2872,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "deleteFlightService",
+          "ranges": [
+            {
+              "startOffset": 2967,
+              "endOffset": 3219,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "932",
+      "url": "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/utils/prisma.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 807,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "939",
+      "url": "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.controller.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 11284,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "createFlightController",
+          "ranges": [
+            {
+              "startOffset": 382,
+              "endOffset": 740,
+              "count": 1
+            },
+            {
+              "startOffset": 660,
+              "endOffset": 738,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "fetchFlightsController",
+          "ranges": [
+            {
+              "startOffset": 799,
+              "endOffset": 1143,
+              "count": 1
+            },
+            {
+              "startOffset": 1058,
+              "endOffset": 1141,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "fetchFlightByIDController",
+          "ranges": [
+            {
+              "startOffset": 1201,
+              "endOffset": 1530,
+              "count": 1
+            },
+            {
+              "startOffset": 1445,
+              "endOffset": 1528,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "fullUpdateFlightController",
+          "ranges": [
+            {
+              "startOffset": 1594,
+              "endOffset": 1939,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "partialUpdateFlightController",
+          "ranges": [
+            {
+              "startOffset": 2005,
+              "endOffset": 2356,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        },
+        {
+          "functionName": "deleteFlightController",
+          "ranges": [
+            {
+              "startOffset": 2428,
+              "endOffset": 2786,
+              "count": 0
+            }
+          ],
+          "isBlockCoverage": false
+        }
+      ]
+    },
+    {
+      "scriptId": "940",
+      "url": "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.schema.ts",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 11440,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  ],
+  "timestamp": 396193.419382,
+  "source-map-cache": {
+    "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/app.ts": {
+      "lineLengths": [
+        13,
+        72,
+        62,
+        2,
+        62,
+        30,
+        54,
+        34,
+        48,
+        53,
+        34,
+        7,
+        18,
+        1,
+        36,
+        45,
+        17,
+        26,
+        24,
+        37,
+        12,
+        8,
+        5,
+        25,
+        1568
+      ],
+      "data": {
+        "version": 3,
+        "file": "C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/app.ts",
+        "sources": [
+          "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/app.ts"
+        ],
+        "names": [],
+        "mappings": ";;;;;;AAAA,sDAA6B;AAG7B,SAAgB,YAAY,CAAE,IAAI,GAAC,EAAE;IAEjC,MAAM,MAAM,GAAG,IAAA,iBAAO,EAAC,IAAI,CAAC,CAAA;IAE5B,MAAM,CAAC,GAAG,CAAC,GAAG,EAAE,KAAK,WAAW,OAAO,EAAE,KAAK;QAC1C,OAAO,EAAE,KAAK,EAAE,OAAO,EAAE,CAAA;IAC3B,CAAC,CAAC,CAAA;IAEJ,OAAO,MAAM,CAAA;AAGjB,CAAC;AAXD,oCAWC;AAGD,6CAA6C;AAC7C,iBAAiB;AAEjB,0BAA0B;AAE1B,wBAAwB;AAExB,qCAAqC;AACrC,YAAY;AACZ,QAAQ;AACR,KAAK;AAGL,yBAAyB",
+        "sourcesContent": [
+          "import fastify from 'fastify'\r\n\r\n\r\nexport function createServer (opts={}){\r\n\r\n    const server = fastify(opts)\r\n\r\n    server.get('/', async function (request, reply) {\r\n        return { hello: 'world' }\r\n      })\r\n\r\n    return server\r\n\r\n\r\n}\r\n\r\n\r\n// const server : FastifyInstance = Fastify({\r\n//     logger : {\r\n\r\n//         level : 'info',\r\n\r\n//         transport : {\r\n\r\n//             target : 'pino-pretty'\r\n//         }\r\n//     }\r\n// })\r\n\r\n\r\n// export default server;\r\n\r\n\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.service.ts": {
+      "lineLengths": [
+        13,
+        72,
+        62,
+        2,
+        62,
+        201,
+        67,
+        21,
+        13,
+        20,
+        20,
+        15,
+        22,
+        16,
+        16,
+        2,
+        46,
+        57,
+        20,
+        46,
+        7,
+        18,
+        2,
+        50,
+        67,
+        95,
+        86,
+        36,
+        63,
+        60,
+        19,
+        19,
+        46,
+        7,
+        12,
+        22,
+        15,
+        27,
+        24,
+        31,
+        9,
+        6,
+        2,
+        50,
+        46,
+        39,
+        34,
+        41,
+        5,
+        67,
+        16,
+        25,
+        10,
+        46,
+        7,
+        18,
+        2,
+        56,
+        54,
+        39,
+        34,
+        41,
+        5,
+        57,
+        20,
+        16,
+        25,
+        10,
+        46,
+        7,
+        18,
+        2,
+        58,
+        57,
+        39,
+        34,
+        41,
+        5,
+        57,
+        20,
+        16,
+        25,
+        10,
+        46,
+        7,
+        18,
+        2,
+        64,
+        43,
+        39,
+        34,
+        39,
+        5,
+        40,
+        16,
+        25,
+        9,
+        7,
+        11,
+        2,
+        50,
+        8640
+      ],
+      "data": {
+        "version": 3,
+        "file": "C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.service.ts",
+        "sources": [
+          "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.service.ts"
+        ],
+        "names": [],
+        "mappings": "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",
+        "sourcesContent": [
+          "import prisma from \"../../../utils/prisma\";\r\nimport { createFlightInput } from \"./flight.schema\";\r\n\r\n\r\nconst dbSelection = {\r\n\r\n            id : true,\r\n            createdAt : true,\r\n            available : true,\r\n            date : true,\r\n            description : true,\r\n            seats : true,\r\n            filled : true\r\n}\r\n\r\n\r\nexport const createFlightService  = async (input : createFlightInput) => {\r\n\r\n\r\n    const flight = await prisma.flight.create({\r\n\r\n        data : input,\r\n        select : {\r\n\r\n           ...dbSelection\r\n            \r\n        }\r\n    })\r\n\r\n\r\n    return flight;\r\n\r\n\r\n}\r\n\r\n\r\nexport const fetchFlightsService = async (perPage : string = '50' , page  : string = '1') => {\r\n\r\n      \r\n    const size = Number.isNaN(parseInt(perPage, 10)) || perPage === '0'  ? 50 : Number(perPage) \r\n\r\n    const index = Number.isNaN(parseInt(page, 10)) ||  page === '0'  ? 1 : Number(page) \r\n\r\n    const skip = size * (index - 1)\r\n\r\n    const recordsCount = await prisma.flight.count()\r\n\r\n    const records = await prisma.flight.findMany({\r\n\r\n      skip : skip,\r\n      take : size,\r\n      select : {\r\n\r\n        ...dbSelection\r\n      }\r\n\r\n    })\r\n\r\n\r\n    return {\r\n\r\n       data : records ,\r\n       meta : {\r\n\r\n          per_page : size,\r\n          page : index,\r\n          count : recordsCount\r\n       }\r\n    }\r\n\r\n}\r\n\r\n\r\nexport const fetchFlightByIDService = async (id : string) => {\r\n\r\n    const numericId : number = parseInt(id, 10)\r\n\r\n    if  (Number.isNaN(numericId)){throw Error ('invalid flight id')}\r\n\r\n    const flight = await prisma.flight.findFirstOrThrow({\r\n\r\n        where : {\r\n            id : numericId\r\n        },\r\n        select : {\r\n\r\n           ...dbSelection\r\n\r\n        }\r\n    });\r\n\r\n\r\n    return flight\r\n}\r\n\r\n\r\nexport const fullUpdateFlightService = async (id : string , input : createFlightInput) => {\r\n\r\n\r\n    const numericId : number = parseInt(id, 10)\r\n\r\n    if  (Number.isNaN(numericId)){throw Error ('invalid flight id')}\r\n\r\n    const flight = await prisma.flight.update({\r\n\r\n        data : input,\r\n        where : {\r\n\r\n            id : numericId\r\n        },\r\n        select : {\r\n\r\n            ...dbSelection\r\n        }\r\n    })\r\n\r\n    return flight\r\n\r\n\r\n}\r\n\r\n\r\nexport const partialUpdateFlightService = async (id : string , input : Partial<createFlightInput>) => {\r\n\r\n\r\n    const numericId : number = parseInt(id, 10)\r\n\r\n    if  (Number.isNaN(numericId)){throw Error ('invalid flight id')}\r\n\r\n    const flight = await prisma.flight.update({\r\n\r\n        data : input,\r\n        where : {\r\n\r\n            id : numericId\r\n        },\r\n        select : {\r\n\r\n            ...dbSelection\r\n        }\r\n    })\r\n\r\n\r\n    return flight\r\n\r\n\r\n}\r\n\r\n\r\n\r\nexport const deleteFlightService = async (id : string) => {\r\n\r\n\r\n    const numericId : number = parseInt(id, 10)\r\n\r\n    if  (Number.isNaN(numericId)){throw Error ('invalid user id')}\r\n\r\n     await prisma.user.delete({\r\n\r\n        where : {\r\n\r\n            id : numericId\r\n        }\r\n    })\r\n\r\n    return\r\n\r\n}\r\n"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/utils/prisma.ts": {
+      "lineLengths": [
+        13,
+        62,
+        43,
+        43,
+        25,
+        616
+      ],
+      "data": {
+        "version": 3,
+        "file": "C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/utils/prisma.ts",
+        "sources": [
+          "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/utils/prisma.ts"
+        ],
+        "names": [],
+        "mappings": ";;AAAA,2CAA8C;AAE9C,MAAM,MAAM,GAAG,IAAI,qBAAY,EAAE,CAAC;AAElC,kBAAe,MAAM,CAAC",
+        "sourcesContent": [
+          "import { PrismaClient } from \"@prisma/client\";\r\n\r\nconst prisma = new PrismaClient();\r\n\r\nexport default prisma;"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.controller.ts": {
+      "lineLengths": [
+        13,
+        62,
+        219,
+        53,
+        58,
+        9,
+        106,
+        77,
+        44,
+        5,
+        19,
+        29,
+        26,
+        5,
+        2,
+        56,
+        55,
+        9,
+        48,
+        87,
+        45,
+        5,
+        19,
+        27,
+        33,
+        5,
+        1,
+        56,
+        58,
+        9,
+        38,
+        78,
+        46,
+        5,
+        19,
+        27,
+        33,
+        5,
+        1,
+        62,
+        59,
+        9,
+        38,
+        93,
+        46,
+        5,
+        19,
+        27,
+        33,
+        5,
+        1,
+        64,
+        62,
+        9,
+        38,
+        96,
+        46,
+        5,
+        19,
+        27,
+        33,
+        5,
+        1,
+        70,
+        55,
+        9,
+        38,
+        60,
+        96,
+        5,
+        19,
+        27,
+        33,
+        5,
+        1,
+        56,
+        8440
+      ],
+      "data": {
+        "version": 3,
+        "file": "C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.controller.ts",
+        "sources": [
+          "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.controller.ts"
+        ],
+        "names": [],
+        "mappings": "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",
+        "sourcesContent": [
+          "import { FastifyRequest, FastifyReply } from \"fastify\"\r\nimport { createFlightInput, fetchFlightsQuery , fetchFlightByIDQuery } from \"./flight.schema\"\r\nimport { createFlightService, fetchFlightsService , fetchFlightByIDService, fullUpdateFlightService , partialUpdateFlightService , deleteFlightService } from \"./flight.service\"\r\n\r\n\r\nexport const createFlightController = async (request : FastifyRequest<{Body: Omit<createFlightInput, \"authorId\">}> , reply : FastifyReply) => {\r\n\r\n\r\n    try {\r\n        \r\n        const data = {\r\n\r\n            ...request.body,\r\n            authorId : Number(request.userId)\r\n\r\n        }\r\n\r\n        const flight = await createFlightService(data)\r\n\r\n        return reply.code(201).send(flight)\r\n\r\n\r\n    } catch (error) {\r\n\r\n        console.error(error)\r\n        reply.send(error)\r\n        \r\n    }\r\n\r\n    \r\n\r\n}\r\n\r\n\r\nexport async function fetchFlightsController(request : FastifyRequest<{Querystring : fetchFlightsQuery}> , reply : FastifyReply){\r\n\r\n\r\n    try {\r\n\r\n        const {perPage,page} = request.query \r\n\r\n        const flights = await fetchFlightsService(perPage, page)\r\n\r\n        return reply.code(200).send(flights)\r\n        \r\n    } catch (error) {\r\n\r\n      console.log(error);\r\n      return reply.send(error);\r\n\r\n    }\r\n\r\n}\r\n\r\n\r\nexport async function fetchFlightByIDController (request : FastifyRequest<{Params : typeof fetchFlightByIDQuery}> , reply : FastifyReply){\r\n\r\n\r\n    try {\r\n  \r\n        const {id} = request.params\r\n  \r\n  \r\n        const flight = await fetchFlightByIDService(id)\r\n  \r\n  \r\n        return reply.status(200).send(flight)\r\n  \r\n  \r\n      \r\n    } catch (error) {\r\n  \r\n      console.log(error);\r\n      return reply.send(error);\r\n      \r\n    }\r\n  \r\n}\r\n\r\n\r\nexport async function fullUpdateFlightController (request : FastifyRequest<{Body : createFlightInput , Params : typeof fetchFlightByIDQuery}> , reply : FastifyReply){\r\n\r\n\r\n    try {\r\n  \r\n        const {id} = request.params\r\n  \r\n  \r\n        const flight = await fullUpdateFlightService(id , request.body)\r\n  \r\n  \r\n        return reply.status(200).send(flight)\r\n  \r\n  \r\n      \r\n    } catch (error) {\r\n  \r\n      console.log(error);\r\n      return reply.send(error);\r\n      \r\n    }\r\n  \r\n  \r\n}\r\n\r\n\r\nexport async function partialUpdateFlightController (request : FastifyRequest<{Body : Partial<createFlightInput> , Params : typeof fetchFlightByIDQuery}> , reply : FastifyReply){\r\n\r\n\r\n    try {\r\n  \r\n        const {id} = request.params\r\n  \r\n  \r\n        const flight = await partialUpdateFlightService(id , request.body)\r\n  \r\n  \r\n        return reply.status(200).send(flight)\r\n  \r\n  \r\n      \r\n    } catch (error) {\r\n  \r\n      console.log(error);\r\n      return reply.send(error);\r\n      \r\n    }\r\n  \r\n  \r\n}\r\n\r\n\r\nexport async function deleteFlightController (request : FastifyRequest<{ Params : typeof fetchFlightByIDQuery}> , reply : FastifyReply){\r\n\r\n\r\n    try {\r\n  \r\n        const {id} = request.params\r\n  \r\n        await deleteFlightService(id)\r\n  \r\n        return reply.status(204).send({message : `Flight with ID ${id} successfully deleted`})\r\n  \r\n      \r\n    } catch (error) {\r\n  \r\n      console.log(error);\r\n      return reply.send(error);\r\n      \r\n    }\r\n  \r\n}"
+        ],
+        "sourceRoot": ""
+      }
+    },
+    "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.schema.ts": {
+      "lineLengths": [
+        13,
+        62,
+        206,
+        30,
+        19,
+        17,
+        161,
+        40,
+        34,
+        36,
+        6,
+        47,
+        31,
+        2,
+        38,
+        19,
+        17,
+        31,
+        40,
+        34,
+        39,
+        35,
+        38,
+        53,
+        6,
+        89,
+        31,
+        2,
+        38,
+        19,
+        17,
+        15,
+        26,
+        50,
+        43,
+        52,
+        46,
+        51,
+        47,
+        50,
+        65,
+        134,
+        10,
+        45,
+        42,
+        45,
+        40,
+        14,
+        83,
+        6,
+        32,
+        31,
+        2,
+        29,
+        19,
+        17,
+        52,
+        48,
+        5,
+        2,
+        32,
+        19,
+        17,
+        47,
+        6,
+        32,
+        20,
+        2,
+        38,
+        19,
+        17,
+        35,
+        6,
+        32,
+        25,
+        2,
+        8664
+      ],
+      "data": {
+        "version": 3,
+        "file": "C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.schema.ts",
+        "sources": [
+          "file:///C:/Users/AbdulafeezAdetunmbi/desktop/first-fastify/src/modules/flights/flight.schema.ts"
+        ],
+        "names": [],
+        "mappings": "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",
+        "sourcesContent": [
+          "import {JSONSchemaType} from \"ajv\";\r\n\r\n\r\nexport interface createFlightInput {\r\n    date : string,\r\n    description : string,\r\n    seats : number,\r\n    authorId : number\r\n\r\n}\r\n\r\nexport interface createFlightResponse {\r\n\r\n    id : number,\r\n    available : boolean,\r\n    createdAt : string,\r\n    date : string,\r\n    seats : number,\r\n    filled : number,\r\n    description : string\r\n\r\n}\r\n\r\nexport interface fetchFlightsQuery  {\r\n   \r\n    perPage? : string,\r\n    page? : string\r\n    \r\n }\r\n \r\n export interface meta  {\r\n \r\n   per_page : number,\r\n   page : number,\r\n   count : number\r\n   \r\n }\r\n \r\n export type fetchFlightsResponse =   {\r\n \r\n    data : createFlightResponse[],\r\n    meta : meta\r\n \r\n }\r\n\r\n\r\nexport const createFlightSchema : JSONSchemaType<createFlightInput> = {\r\n\r\n    type : \"object\",\r\n    properties : {\r\n        date: {type: \"string\", format: \"date-time\"},//The date is the internet Date/Time Format and can be obtained with the new Date().toISOString() function\r\n        description: {type: \"string\"},\r\n        seats: {type: \"number\"},\r\n        authorId : {type : \"number\"}\r\n    },\r\n    required: [\"date\",\"description\", \"seats\"],\r\n    additionalProperties: false\r\n\r\n}\r\n\r\n\r\nexport const createFlightResponseSchema : JSONSchemaType<createFlightResponse> = {\r\n\r\n    type : \"object\",\r\n    properties : {\r\n        id: {type: \"number\"},\r\n        description: {type: \"string\"},\r\n        seats: {type: \"number\"},\r\n        available : {type : \"boolean\"},\r\n        filled: {type: \"number\"},\r\n        createdAt: {type: \"string\"},\r\n        date : {type: \"string\", format : \"date-time\"}\r\n    },\r\n    required: [\"id\",\"description\", \"seats\",\"available\",\"filled\",\"createdAt\",\"date\"],\r\n    additionalProperties: false\r\n\r\n}\r\n\r\n\r\n\r\nexport const fetchFlightsResponseSchema: JSONSchemaType<fetchFlightsResponse> = {\r\n   \r\n    type: \"object\",\r\n    properties: {\r\n      data: {\r\n        \r\n      type: \"array\" , \r\n      items : {type : \"object\" , properties : {\r\n  \r\n  \r\n        id: {type: \"number\"},\r\n        description: {type: \"string\"},\r\n        seats: {type: \"number\"},\r\n        available : {type : \"boolean\"},\r\n        filled: {type: \"number\"},\r\n        createdAt: {type: \"string\"},\r\n        date : {type: \"string\", format : \"date-time\"}\r\n  \r\n  \r\n      } ,additionalProperties : false , required : [\"id\", \"description\", \"seats\", \"available\",\"filled\",\"createdAt\",\"date\"]}\r\n      },\r\n      meta : {type : \"object\" , properties : { \r\n        \r\n        count : {type : 'number'},\r\n        per_page : {type : 'number'},\r\n        page : {type : 'number'}\r\n      \r\n      }, \r\n      additionalProperties : false , required : [\"count\", \"per_page\", \"page\"]},\r\n  \r\n    },\r\n    additionalProperties: false,\r\n    required : [\"data\",\"meta\"] ,\r\n    \r\n}\r\n\r\n\r\nexport const fetchFlightsQuery : JSONSchemaType<fetchFlightsQuery> = {\r\n\r\n    type : \"object\",\r\n    properties : {\r\n \r\n     perPage : {type : 'string', nullable : true},\r\n     page : {type : 'string', nullable : true}\r\n \r\n     }\r\n \r\n \r\n }\r\n \r\n export const fetchFlightByIDQuery : JSONSchemaType<{id : string}> = {\r\n \r\n     type : 'object',\r\n     properties : {\r\n \r\n       id : {type : 'string', nullable : false}\r\n     },\r\n     additionalProperties : false,\r\n     required : ['id']\r\n}\r\n\r\n\r\nexport const deleteFlightResponseSchema : JSONSchemaType<{message : string}> = {\r\n\r\n    type : 'object',\r\n    properties : {\r\n  \r\n      message: {type : 'string'}\r\n    },\r\n    additionalProperties : false,\r\n    required : ['message']\r\n  }"
+        ],
+        "sourceRoot": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "date": "2024-05-27T05:33:40.237Z",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Users\\AbdulafeezAdetunmbi\\desktop\\first-fastify\\src\\__tests__\\app.test.ts"
+  ],
+  "execArgv": [
+    "--import=file:///C:/Users/AbdulafeezAdetunmbi/Desktop/First-Fastify/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/import.mjs",
+    "--import=file:///C:/Users/AbdulafeezAdetunmbi/Desktop/First-Fastify/node_modules/@tapjs/mock/dist/esm/import.mjs",
+    "--enable-source-maps",
+    "--import=file:///C:/Users/AbdulafeezAdetunmbi/Desktop/First-Fastify/node_modules/@tapjs/processinfo/dist/esm/import.mjs",
+    "--no-warnings",
+    "--loader",
+    "ts-node/esm"
+  ],
+  "NODE_OPTIONS": "\"--import=file:///C:/Users/AbdulafeezAdetunmbi/Desktop/First-Fastify/node_modules/@tapjs/processinfo/dist/esm/import.mjs\"",
+  "cwd": "C:\\Users\\AbdulafeezAdetunmbi\\desktop\\first-fastify",
+  "pid": 8156,
+  "ppid": 2668,
+  "parent": null,
+  "uuid": "4f53a0f2-93cb-4c43-9e11-efcae4ace3d9",
+  "files": [
+    "C:\\Users\\AbdulafeezAdetunmbi\\desktop\\first-fastify\\src\\__tests__\\app.test.ts",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\index.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\glob.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\has-magic.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\ignore.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\brace-expansion\\index.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\assert-valid-pattern.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\ast.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\escape.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\unescape.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\path-scurry\\dist\\esm\\index.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\pattern.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\walker.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\brace-expressions.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\lru-cache\\dist\\esm\\index.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minipass\\dist\\esm\\index.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\processor.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\loader.mjs",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\hooks.mjs",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\mock-service-client.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\mock-service.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\dist\\esm\\index.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\index.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\is-relative-require.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\export-line.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\munge-mocks.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\resolve-mock-entry-point.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\service-key.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\commonjs\\service-key.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\dist\\esm\\call-site-like.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\dist\\esm\\require-resolve.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-all-conditions.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-all-conditional-values.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-unique-condition-sets.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-all-exports.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-all-local-imports.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-conditional-value.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-import.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\is-windows.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\dist\\esm\\parse.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-conditional-values-list.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\read-pkg.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\errors.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-export.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-named-exports-list.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\star-glob.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\to-path.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\file-exists.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\find-dep-package.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-package-import.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\to-file-url.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-dependency-export.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\read-json.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\find-star-match.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\walk-up-path\\dist\\mjs\\index.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\index.js",
+    "C:\\Users\\AbdulafeezAdetunmbi\\desktop\\first-fastify\\src\\app.ts"
+  ],
+  "sources": {
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\index.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\src\\index.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\glob.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\src\\glob.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\has-magic.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\src\\has-magic.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\ignore.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\src\\ignore.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\assert-valid-pattern.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\src\\assert-valid-pattern.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\ast.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\src\\ast.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\escape.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\src\\escape.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\unescape.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\src\\unescape.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\path-scurry\\dist\\esm\\index.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\path-scurry\\src\\index.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\pattern.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\src\\pattern.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\walker.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\src\\walker.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\dist\\esm\\brace-expressions.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minimatch\\src\\brace-expressions.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\lru-cache\\dist\\esm\\index.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\lru-cache\\src\\index.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minipass\\dist\\esm\\index.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\minipass\\src\\index.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\processor.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\src\\processor.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\mock-service.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\src\\mock-service.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\dist\\esm\\index.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\src\\index.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\index.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\index.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\is-relative-require.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\is-relative-require.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\export-line.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\src\\export-line.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\munge-mocks.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\src\\munge-mocks.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\resolve-mock-entry-point.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\src\\resolve-mock-entry-point.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\esm\\service-key.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\src\\service-key.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\dist\\commonjs\\service-key.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\mock\\src\\service-key-cjs.cts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\dist\\esm\\call-site-like.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\src\\call-site-like.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\dist\\esm\\require-resolve.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\src\\require-resolve.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-all-conditions.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\get-all-conditions.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-all-conditional-values.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\get-all-conditional-values.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-unique-condition-sets.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\get-unique-condition-sets.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-all-exports.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\resolve-all-exports.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-all-local-imports.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\resolve-all-local-imports.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-conditional-value.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\resolve-conditional-value.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-import.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\resolve-import.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\is-windows.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\is-windows.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\dist\\esm\\parse.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\@tapjs\\stack\\src\\parse.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-conditional-values-list.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\get-conditional-values-list.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\read-pkg.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\read-pkg.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\errors.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\errors.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-export.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\resolve-export.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\get-named-exports-list.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\get-named-exports-list.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\star-glob.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\star-glob.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\to-path.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\to-path.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\file-exists.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\file-exists.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\find-dep-package.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\find-dep-package.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-package-import.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\resolve-package-import.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\to-file-url.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\to-file-url.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\resolve-dependency-export.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\resolve-dependency-export.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\read-json.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\read-json.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\dist\\esm\\find-star-match.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\resolve-import\\src\\find-star-match.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\walk-up-path\\dist\\mjs\\index.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\walk-up-path\\src\\index.ts"
+    ],
+    "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\dist\\esm\\index.js": [
+      "C:\\Users\\AbdulafeezAdetunmbi\\Desktop\\First-Fastify\\node_modules\\glob\\src\\index.ts"
+    ]
+  },
+  "root": "4f53a0f2-93cb-4c43-9e11-efcae4ace3d9",
+  "externalID": "src/__tests__/app.test.ts",
+  "code": 0,
+  "signal": null,
+  "runtime": 1708.394
+}

@@ -35,7 +35,7 @@ export const updateBookingUserController = async (request : FastifyRequest<{Body
             const payload : updateBookingInput = {
 
                 userId : request.body.userId,
-                bookingId : request.body.bookingId
+                id : request.body.id
             }
 
 
@@ -73,12 +73,12 @@ export const fetchBookingsController =  async (request : FastifyRequest<{Params 
 
 }
 
-export const deleteBookingController = async (request : FastifyRequest<{Body : Pick<updateBookingInput,"bookingId">}> , reply : FastifyReply) => {
+export const deleteBookingController = async (request : FastifyRequest<{Body : Pick<updateBookingInput,"id">}> , reply : FastifyReply) => {
 
 
     try {
          
-        const bookingId = request.body.bookingId
+        const bookingId = request.body.id
 
         await deleteBookingService(bookingId)
 
@@ -94,12 +94,12 @@ export const deleteBookingController = async (request : FastifyRequest<{Body : P
 
 }
 
-export const fetchBookingController = async (request : FastifyRequest<{Params : Pick<updateBookingInput,"bookingId">}> , reply : FastifyReply) => {
+export const fetchBookingController = async (request : FastifyRequest<{Params : Pick<updateBookingInput,"id">}> , reply : FastifyReply) => {
    
 
     try {
 
-        const bookingId = request.params.bookingId
+        const bookingId = request.params.id
 
         const booking = await fetchBookingService(bookingId)
 

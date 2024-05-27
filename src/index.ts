@@ -1,4 +1,4 @@
-import server from "./app"
+import {createServer} from "./app"
 
 import helmet from '@fastify/helmet'
 
@@ -13,6 +13,19 @@ import prisma from "../utils/prisma"
 import { loginRouteOptions } from "./modules/auth/auth"
 
 
+const server = createServer({
+      logger : {
+  
+          level : 'info',
+  
+          transport : {
+  
+              target : 'pino-pretty'
+          }
+      }
+  });
+
+
 server.register(helmet, {
 
   contentSecurityPolicy : false
@@ -25,7 +38,6 @@ server.setErrorHandler((error, _, reply) => {
  // reply.status(500).send({ ok: false })
   reply.status(400).send(error)
 })
-
   
 
 //check if database can be reached/connected before starting server
