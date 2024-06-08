@@ -1,12 +1,12 @@
 import tap from 'tap'
 
-import {createServer} from '../../src/app'
+import {createServer} from '../../../src/app'
 
-import * as flightService from '../../src/modules/flights/flight.service'
+import * as flightService from '../../../src/modules/flights/flight.service'
 
-import * as flightController from '../../src/modules/flights/flight.controller'
+import * as flightController from '../../../src/modules/flights/flight.controller'
 
-import * as flightSchema from '../../src/modules/flights/flight.schema'
+import * as flightSchema from '../../../src/modules/flights/flight.schema'
 
 import sinon from 'sinon'
 

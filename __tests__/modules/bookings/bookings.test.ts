@@ -1,12 +1,12 @@
 import tap from 'tap'
 
-import {createServer} from '../../src/app'
+import {createServer} from '../../../src/app'
 
-import * as bookingsService from '../../src/modules/bookings/booking.service'
+import * as bookingsService from '../../../src/modules/bookings/booking.service'
 
-import * as bookingsController from '../../src/modules/bookings/booking.controller'
+import * as bookingsController from '../../../src/modules/bookings/booking.controller'
 
-import * as bookingsSchema from '../../src/modules/bookings/booking.schema'
+import * as bookingsSchema from '../../../src/modules/bookings/booking.schema'
 
 import sinon from 'sinon'
 

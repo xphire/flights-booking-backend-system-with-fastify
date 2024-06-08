@@ -81,6 +81,7 @@ export const fullUpdateUserRouteOptions = {
         description : 'get user by Id',
         tags : ['users'],
         params : fetchUserByIDQuery,
+        body : createUserSchema,
         response : {
 
             200 : createUserResponseSchema

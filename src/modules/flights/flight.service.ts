@@ -1,3 +1,4 @@
+import { PrismaClient } from "@prisma/client";
 import prisma from "../../../utils/prisma";
 import { createFlightInput } from "./flight.schema";
 
