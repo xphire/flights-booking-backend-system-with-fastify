@@ -44,6 +44,15 @@ export interface fetchFlightsQuery  {
  }
 
 
+ export interface partialUpdateInput {
+
+    description? : string,
+    seats? : number,
+    available? : boolean,
+    date?: string
+ }
+
+
 export const createFlightSchema : JSONSchemaType<createFlightInput> = {
 
     type : "object",
@@ -137,6 +146,19 @@ export const fetchFlightsQuery : JSONSchemaType<fetchFlightsQuery> = {
      },
      additionalProperties : false,
      required : ['id']
+}
+
+export const partialUpdateInputSchema : JSONSchemaType<partialUpdateInput> = {
+
+      type : 'object',
+      properties : {
+
+          description : {type : 'string' , nullable : true},
+          date : {type : 'string', format : 'date-time',nullable : true},
+          seats : {type : 'number', nullable : true},
+          available : {type : 'boolean', nullable : true}
+      },
+      additionalProperties : false
 }
 
 

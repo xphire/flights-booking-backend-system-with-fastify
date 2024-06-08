@@ -29,7 +29,7 @@ export const createBookingRouteOptions = {
 
 export const updateBookingUserRouteOptions = {
 
-    method : 'PUT' as const,
+    method : 'PATCH' as const,
     url : '/booking',
     schema : {
 

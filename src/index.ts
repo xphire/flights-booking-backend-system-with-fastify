@@ -22,7 +22,13 @@ const server = createServer({
   
               target : 'pino-pretty'
           }
-      }
+      },
+      // ajv : {
+      //   customOptions : {
+      //     coerceTypes : false, //Do not coerce types eg. number to string
+      //     strictTypes : true
+      //   }
+      // }
   });
 
 

@@ -73,16 +73,16 @@ export const fetchBookingsController =  async (request : FastifyRequest<{Params 
 
 }
 
-export const deleteBookingController = async (request : FastifyRequest<{Body : Pick<updateBookingInput,"id">}> , reply : FastifyReply) => {
+export const deleteBookingController = async (request : FastifyRequest<{Params : Pick<updateBookingInput,"id">}> , reply : FastifyReply) => {
 
 
     try {
          
-        const bookingId = request.body.id
+        const bookingId = request.params.id
 
         await deleteBookingService(bookingId)
 
-        return reply.status(204).send({message : `Flight with ID ${bookingId} successfully deleted`})
+        return reply.status(204).send({message : `Booking with ID ${bookingId} successfully deleted`})
 
     } catch (error) {
 

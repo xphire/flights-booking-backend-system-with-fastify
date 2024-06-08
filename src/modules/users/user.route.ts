@@ -2,7 +2,7 @@ import { createUserController , fetchUserByIDController, fetchUsersController , 
 
 import { createUserSchema , createUserResponseSchema , fetchUsersResponseSchema , fetchUsersQuery , fetchUserByIDQuery , deleteUserResponseSchema } from "./user.schema";
 
-import { adminAuth, headerSchemaOptions } from "../auth/auth";
+import { adminAuth } from "../auth/auth";
 
 export const createUserRouteOptions = {
 

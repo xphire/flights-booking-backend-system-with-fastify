@@ -1,6 +1,6 @@
 import t from 'tap'
 
-import {createServer} from '../app'
+import {createServer} from '../src/app'
 
 const server = createServer()
 
