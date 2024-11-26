@@ -1,9 +1,9 @@
 ## Description
 
-#Backend With FastifyJS
+### Backend With FastifyJS
 
 - PRISMA ORM
-- Postresql
+- PostgreSQL
 - AJV For Validation
 - Argon2 For Hashing
 - Auth With JWT (RSA Tokens)
